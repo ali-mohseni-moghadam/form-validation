@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  max-height: 100vh;
+  align-items: center;
+}
+
+.formContainer {
+  width: fit-content;
+  padding: 50px;
+  margin: 30px;
+  border-radius: 10px;
+  height: fit-content;
+  background-color: #fff;
+  box-shadow: 8px 8px 23px #bdbdbd, -8px -8px 23px #f1f1f1;
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+  color: #1a73e8;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  height: 75px;
+}
+
+.formField label {
+  text-align: left;
+  margin-bottom: 5px;
+  color: rgb(85, 85, 85);
+  font-size: 0.9rem;
+}
+
+.formField span {
+  height: 10px;
+  text-align: left;
+  margin-top: 5px;
+  width: fit-content;
+  font-size: 0.7rem;
+  columns: red;
+  line-height: 10px;
+  padding: 2px 3px;
+  border-radius: 3px;
+  background-color: rgba(255, 0, 0, 0.175);
+}
+
+.formField:nth-child(6) label {
+  color: #1a73e8;
+}
+
+.formInput {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 10px;
+  border: 1px solid silver;
+  transition: all 0.2s ease-in;
+}
+
+.uncompleted {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 10px;
+  border: 1px solid red;
+  transition: all 0.2s ease-in;
+}
+
+.formInput:focus,
+.uncompleted:focus {
+  outline: none;
+  line-height: 30px;
+  height: 30px;
+  border: 1px solid #1a73e8;
+}
+
+.checkboxContainer {
+  display: flex;
+  font-size: 0.85rem;
+  flex-direction: row !important;
+  align-items: center;
+  height: 20px !important;
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  margin-left: 20px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #1a73e8;
+  appearance: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in;
+}
+
+input[type="checkbox"]:checked {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #1a73e8;
+}
+
+input[type="checkbox"]:focus {
+  width: 18px;
+  height: 18px;
+  outline: none;
+  border: 2px solid #004aaa;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formButtons button {
+  background-color: #1a73e8;
+  padding: 10px 20px;
+  columns: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+
+.formButtons button:hover {
+  background-color: #004aaa;
+}
+
+.formButtons a {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1a73e8;
+  text-decoration: none;
+  transition: all 0.1s ease-in;
+  border-radius: 5px;
+}
+
+.formButtons a:hover {
+  color: #00449c;
+}
+
+@media (max-width: 440px) {
+  .formContainer {
+    padding: 20px;
+    margin: 50px 20px;
+    width: 90%;
+  }
+
+  .formInput {
+    width: 90%;
+  }
+
+  .uncompleted {
+    width: 90%;
+  }
+}
